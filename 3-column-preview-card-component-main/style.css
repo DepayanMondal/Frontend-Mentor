@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@200&family=Open+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@200&family=Open+Sans&display=swap');
+
+body {
+    padding: 0;
+    margin: 0;
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    grid-template-rows: 1fr 4fr 1fr;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+}
+
+img {
+    grid-row-start: 1;
+}
+
+h1 {
+    grid-row-start: 2;
+    font-family: 'Noto Sans', sans-serif;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+}
+
+p {
+    grid-row-start: 3;
+    font-family: 'Noto Sans', sans-serif;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    align-self: center;
+    color: hsl(0, 0%, 95%);
+}
+
+button{
+    all: unset;
+    font-family: 'Noto Sans', sans-serif;
+    font-family: 'Open Sans', sans-serif;
+    
+    background-color: white;
+    text-align: center;
+    border-radius: 10rem;
+    width: 60%;
+    cursor: pointer;
+ }
+ .sedan button{
+    color: hsl(31, 77%, 52%);
+ }
+ .suv button{
+    color: hsl(184, 100%, 22%);
+ }
+
+ .luxury button{
+    color: hsl(179, 100%, 13%);
+ }
+ button:hover {
+    background-color: transparent;
+    color: white;
+    border: 2px solid white;
+ }
+.container {
+    border-radius: 12px;
+    overflow: hidden;
+    color: white;
+    height: 100%;
+    display: grid;
+    grid-column-start: 2;
+    grid-row-start: 2;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.card {
+    padding: 3rem;
+    display: grid;
+    
+    grid-template-rows: 15% 15% 60% 10%;
+}
+
+.sedan {
+    background-color: hsl(31, 77%, 52%);
+}
+
+.suv {
+    background-color: hsl(184, 100%, 22%);
+}
+.luxury {
+    background-color: hsl(179, 100%, 13%);
+}
+.attribution {
+    grid-column-start: 2;
+    grid-row-start: 3;
+    font-family: 'Noto Sans', sans-serif;
+    font-family: 'Open Sans', sans-serif;
+}
+ 
